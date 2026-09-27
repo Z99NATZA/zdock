@@ -60,6 +60,8 @@ The CLI builds the runtime from host and selected packages. It must not copy com
 
 ## Delivery sequence
 
+The standalone [UI preview](preview.md) explores component layout and interaction with browser technologies in a separate transparent GTK/WebKit window. It does not use GNOME Shell APIs and is not the production component loader.
+
 1. Build a host extension with an empty panel, slots, and one separately packaged default component.
 2. Publish the component SDK and make the default use the exact same loading path as an external package.
 3. Implement the CLI operations and transactional replacement described in [Component lifecycle](component-lifecycle.md).
